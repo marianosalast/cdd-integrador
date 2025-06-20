@@ -23,6 +23,7 @@ uvicorn api:app --reload
 
 # Tambien se puede con:
 py api.py
+python -m uvicorn api:app --reload
 ```
 
 ### Verificar que funciona

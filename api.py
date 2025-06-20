@@ -76,3 +76,8 @@ def download_file(filename: str):
     if not os.path.exists(filepath):
         raise HTTPException(status_code=404, detail="Archivo no encontrado")
     return FileResponse(path=filepath, filename=filename, media_type='application/json')
+
+
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8000)
